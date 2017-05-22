@@ -137,7 +137,7 @@ section.features .flex > *:first-child::after {
 section.features .flex > *:last-child::after {
   content: '↓';
   top: -1.2em;
-  right: calc(50% - .35em);
+  right: calc(50% - .33em);
 }
 
 @media all and (min-width: 600px) {
