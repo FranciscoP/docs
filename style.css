@@ -80,13 +80,33 @@ p {
   padding-bottom: 0;
 }
 
-main {
-  background: #fff;
-  margin-bottom: 300px;
+main,
+footer {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 300px;
 }
 
+main section {
+  margin: 50px 0;
+  padding: 30px;
+}
 
-section.features,
+section h3 {
+  padding: 0;
+}
+section h3 + p {
+  margin-top: 10px;
+}
+
+section img {
+  width: 100%;
+}
+
+section.features {
+  text-align: center;
+}
+
 footer {
   width: 100%;
   max-width: 800px;
