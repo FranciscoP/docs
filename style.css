@@ -12,7 +12,7 @@ nav {
   box-shadow: none;
 }
 
-.paper p {
+p {
   font-family: 'Droid Serif',Georgia,Cambria,"Times New Roman",Times,serif;
   font-size: 1.1em;
 }
@@ -68,6 +68,7 @@ nav {
 
 .hero header p {
   margin: 10px 0;
+  font-family: inherit;
 }
 
 .hero header .button {
@@ -76,8 +77,9 @@ nav {
 }
 
 .hero h1 {
-  font-size: 1.8em;
+  font-size: 2em;
   padding: 0;
+  font-weight: normal;
 }
 
 .paper {
