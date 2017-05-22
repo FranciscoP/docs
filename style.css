@@ -16,53 +16,18 @@ p {
   font-family: 'Droid Serif',Georgia,Cambria,"Times New Roman",Times,serif;
 }
 
+
 .hero {
   background-image: linear-gradient(135deg, #81c, #18c);
   background-size: cover;
   width: 100%;
-  height: 80vh;
-  min-height: 480px;
-  color: #fff;
-  position: relative;
-  font-size: 1.1em;
-}
-
-.hero .content {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  padding-top: 300px;
-  position: absolute;
-  bottom: -1px;
-  left: 50%;
-  transform: translateX(-50%);
-  overflow: hidden;
-}
-
-
-@media all and (max-width: 800px) {
-  .hero {
-    height: auto;
-  }
-  .hero .content {
-    position: static;
-    transform: none;
-    overflow: visible;
-    padding: 0;
-  }
-  .hero header {
-    padding: 30px 20px;
-  }
-  .hero .paper {
-    border-radius: 0;
-    box-shadow: none;
-  }
 }
 
 .hero header {
+  color: #fff;
   font-family: sans-serif;
   text-align: center;
-  margin-bottom: 20px;
+  padding: 50px 20px;
 }
 
 .hero header p {
@@ -70,23 +35,34 @@ p {
   font-family: inherit;
 }
 
-.hero header .button {
-  background: none;
-  border: 2px solid #fff;
-}
-
-.hero h1 {
+.hero header h1 {
   font-size: 2em;
   padding: 0;
   font-weight: normal;
+}
+
+.hero header .button {
+  background: none;
+  border: 2px solid #fff;
 }
 
 .paper {
   color: #333;
   background: #fff;
   padding: 30px;
-  border-radius: .3em .3em 0 0;
-  box-shadow: .1em .1em .3em rgba(0, 0, 0, .5);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media all and (min-width: 800px) {
+  .hero header {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .paper {
+    border-radius: .3em .3em 0 0;
+    box-shadow: .3em -.3em .3em -.3em rgba(0, 0, 0, .5);
+  }
 }
 
 .paper > *:first-child {
