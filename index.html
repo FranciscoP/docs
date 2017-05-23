@@ -10,7 +10,6 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
   <link href="/style.css" rel="stylesheet"/>
-  <!-- <link rel="icon" href="/logo.png" type="image/png"> -->
 </head>
 <body>
 
@@ -19,7 +18,7 @@
       <header>
         <h1>Documentation Agency</h1>
         <p>Save development time and make your users happy</p>
-        <a class="button touch">Get in touch</a>
+        <a href="#contact" class="button touch">Get in touch</a>
       </header>
 
       <div class="paper">
@@ -70,31 +69,32 @@
       <p>A lot of content here</p>
     </section>
 
-    <section>
-      <form>
-        <fieldset class="flex one two-800">
-          <label>
-            Contact name:
-            <input placeholder="John Doe" />
-          </label>
-          <label>
-            Contact email:
-            <input placeholder="John Doe" />
-          </label>
-          <label>
-            Company name (optional):
-            <input placeholder="John Doe" />
-          </label>
-          <label>
-            Approximate Budget (optional):
-            <input placeholder="John Doe" />
-          </label>
-          <label class="full">
-            Product description:
-            <textarea></textarea>
-          </label>
-          <label><button>Send</button></label>
-        </fieldset>
+    <section id="contact">
+      <h2>Contact us</h2>
+      <form class="flex one two-800">
+        <label>
+          Full Name:
+          <input placeholder="John Doe" />
+        </label>
+        <label>
+          Contact Email:
+          <input placeholder="john@doe.com" />
+        </label>
+        <label>
+          <p>Company name (optional):</p>
+          <p class="subtitle"> </p>
+          <input placeholder="Doe LTD" />
+        </label>
+        <label>
+          <p>Approximate budget in $ (optional):</p>
+          <input type="number" placeholder="5000" />
+        </label>
+        <label class="full">
+          <p>Full description:</p>
+          <p class="subtitle">Include programming language, link to the project, deadlines,  human languages, etc</p>
+          <textarea placeholder=""></textarea>
+        </label>
+        <div><button>Send inquiry</button></div>
       </form>
     </section>
   </main>
@@ -103,8 +103,5 @@
   <footer>
     Some icons by The Noun Project: <a href="https://thenounproject.com/search/?q=code&i=808201">Coding</a> & <a href="https://thenounproject.com/search/?q=typewriter&i=643767">Typewriter</a>
   </footer>
-  <script>
-    document.querySelector('.touch').setAttribute('href', 'mailto:' + 'public@' + 'francisco.io');
-  </script>
 </body>
 </html>

@@ -107,6 +107,20 @@ section.features {
   text-align: center;
 }
 
+form label {
+  margin-bottom: 10px;
+}
+
+form p {
+  margin: 0;
+  font-family: inherit;
+}
+
+form p.subtitle {
+  color: #666;
+  font-size: .85em;
+}
+
 footer {
   width: 100%;
   max-width: 800px;
