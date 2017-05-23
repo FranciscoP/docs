@@ -71,30 +71,35 @@
 
     <section id="contact">
       <h2>Contact us</h2>
-      <form class="flex one two-800">
+      <form class="flex one two-800" action="https://formspree.io/public@francisco.io" method="POST">
         <label>
           Full Name:
-          <input placeholder="John Doe" />
+          <input name="name" placeholder="John Doe" />
         </label>
         <label>
           Contact Email:
-          <input placeholder="john@doe.com" />
+          <input name="email" placeholder="john@doe.com" />
         </label>
         <label>
           <p>Company name (optional):</p>
           <p class="subtitle"> </p>
-          <input placeholder="Doe LTD" />
+          <input name="company" placeholder="Doe LTD" />
         </label>
         <label>
           <p>Approximate budget in $ (optional):</p>
-          <input type="number" placeholder="5000" />
+          <input name="budget" type="number" placeholder="5000" />
         </label>
         <label class="full">
           <p>Full description:</p>
           <p class="subtitle">Include programming language, link to the project, deadlines,  human languages, etc</p>
-          <textarea placeholder=""></textarea>
+          <textarea name="description" placeholder=""></textarea>
         </label>
-        <div><button>Send inquiry</button></div>
+        <div>
+          <input type="hidden" name="_subject" value="Documentation inquiry" />
+          <input type="hidden" name="_next" value="https://documentation.agency/" />
+          <input type="text" name="_gotcha" style="display:none" />
+          <button>Send inquiry</button>
+        </div>
       </form>
     </section>
   </main>
