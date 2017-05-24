@@ -146,7 +146,7 @@ section.features .flex > *:first-child::after {
 
 section.features .flex > *:last-child::after {
   content: '↓';
-  top: -1.2em;
+  top: -1em;
   right: calc(50% - .33em);
 }
 
