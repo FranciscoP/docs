@@ -67,7 +67,7 @@ button,
 
 @media all and (min-width: 800px) {
   .hero header {
-    padding-top: 100px 20px 50px;
+    padding: 80px 20px 60px;
   }
   .paper {
     padding: 30px 30px 40px;
