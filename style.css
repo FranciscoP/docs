@@ -76,7 +76,7 @@ p {
 }
 
 .paper h1,
-.paper h2 {
+section h2 {
   padding-bottom: 0;
 }
 
@@ -88,8 +88,52 @@ footer {
 }
 
 main section {
-  margin: 50px 0;
+  margin: 0;
   padding: 30px;
+}
+
+section.features {
+  text-align: center;
+}
+
+section.quote p {
+  text-align: center;
+  font-size: 1.5em;
+  color: #666;
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+section.features {
+  margin-top: 50px;
+}
+
+section.example h2 {
+  padding-top: 0;
+  /*line-height: 1;*/
+}
+
+section.example p {
+  margin: 10px 0;
+}
+
+section.example .button {
+  background: #18c;
+}
+
+section.example .button:hover {
+  background: #81c;
+}
+
+section.example img {
+  border-radius: .3em;
+}
+
+@media all and (min-width: 700px) {
+  section.example img {
+    width: 80%;
+    margin: 0 10%;
+  }
 }
 
 section h3 {
@@ -101,10 +145,6 @@ section h3 + p {
 
 section img {
   width: 100%;
-}
-
-section.features {
-  text-align: center;
 }
 
 form label {

@@ -4,8 +4,8 @@
   <title>Documentation Agency</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="keywords" content="spaced repetition, learn, memorize, language, vocabulary">
-  <meta name="description" content="Save time with first-rate documentation for your project">
+  <meta name="keywords" content="documentation, agency, hire, contract, docs, readme">
+  <meta name="description" content="Save developer time and get first-rate documentation for your project">
   <link href="/picnic.css" rel="stylesheet"/>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
@@ -18,7 +18,7 @@
       <header>
         <h1>Documentation Agency</h1>
         <p>Save development time and make your users happy</p>
-        <a href="#contact" class="button touch">Get in touch</a>
+        <a href="#contact" class="button">Get in touch</a>
       </header>
 
       <div class="paper">
@@ -64,6 +64,24 @@
       </div>
     </section> -->
 
+    <section class="quote">
+      <p>Give your rockstar developers everything they need to make your product great: <a href="#contact">get in touch</a></p>
+    </section>
+
+    <section class="example">
+      <div class="flex one two-700">
+        <a href="https://picnicss.com/" target="_blank">
+          <img src="/img/picnic.png">
+        </a>
+        <div>
+          <h2>Example: Picnic CSS</h2>
+          <p>A small but loved CSS library that has a lorem placeholder intead of text:</p>
+          <a class="button" href="https://picnicss.com/" target="_blank">Landing Page</a>
+          <a class="button" href="https://picnicss.com/documentation" target="_blank">Documentation</a>
+        </div>
+      </div>
+    </section>
+
     <section class="features">
       <h2>WORK IN PROGRESS</h2>
       <p>A lot of content here</p>
@@ -71,6 +89,7 @@
 
     <section id="contact">
       <h2>Contact us</h2>
+      <p>We'll evaluate your project and answer within 24h with further information. You can contact us <a class="email" href="">on our email</a> or with the online form:</p>
       <form class="flex one two-800" action="https://formspree.io/public@francisco.io" method="POST">
         <label>
           Full Name:
@@ -108,5 +127,11 @@
   <footer>
     Some icons by The Noun Project: <a href="https://thenounproject.com/search/?q=code&i=808201">Coding</a> & <a href="https://thenounproject.com/search/?q=typewriter&i=643767">Typewriter</a>
   </footer>
+  <script>
+    setTimeout(function(){
+      var domain = 'francisco.io';
+      document.querySelector('.email').setAttribute('href', 'mailto:' + 'public@' + domain + '?' + 'subject=' + 'Create documentation for website');
+    }, 1500);
+  </script>
 </body>
 </html>
