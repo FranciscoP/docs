@@ -116,9 +116,8 @@ section.quote p {
   margin: 0 auto;
 }
 
-section.example h2 {
+section h2 {
   padding-top: 0;
-  /*line-height: 1;*/
 }
 
 section.example p {
@@ -155,6 +154,10 @@ section.guide img {
   display: block;
   opacity: .7;
   filter: invert(100%);
+}
+
+section.contact {
+  padding-top: 30px;
 }
 
 @media all and (min-width: 800px) {
