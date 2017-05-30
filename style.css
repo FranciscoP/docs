@@ -216,18 +216,18 @@ section.features .flex > *::after {
   line-height: 1;
   top: calc(10vw - .5em);
   font-size: 3em;
+  width: 50px;
+  text-align: center;
+  right: -25px;
 }
 
 section.features .flex > *:first-child::after {
   content: '+';
-  right: -.4em;
 }
 
 section.features .flex > *:last-child::after {
   content: '↓';
   top: -1em;
-  right: calc(50% - .33em);
-
   right: 50%;
   width: 50px;
   margin-right: -25px;
