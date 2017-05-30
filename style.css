@@ -227,6 +227,7 @@ section.features .flex > *:first-child::after {
 
 section.features .flex > *:last-child::after {
   content: '↓';
+  font-size: 2.6em;
   top: -1em;
   right: 50%;
   width: 50px;
