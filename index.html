@@ -114,7 +114,7 @@
         </label>
         <label>
           <p>Approx. budget in $ (optional):</p>
-          <input name="budget" type="number" placeholder="5000" />
+          <input name="budget" type="number" />
         </label>
         <label class="full">
           <p>Full description:</p>
@@ -135,11 +135,16 @@
     <div>This is a Francisco IO LTD (UK) project created and supervised by <a href="https://francisco.io/">Francisco Presencia</a>.</div>
     <div>There's a great team behind the agency working on it on request.</div>
   </footer>
+
+  <script src="https://unpkg.com/umbrellajs"></script>
   <script>
     setTimeout(function(){
       var domain = 'francisco.io';
       document.querySelector('.email').setAttribute('href', 'mailto:' + 'public@' + domain + '?' + 'subject=' + 'Create documentation for website');
     }, 1500);
+    u('form#contact').ajax(function(res){
+      console.log(res);
+    });
   </script>
 </body>
 </html>
