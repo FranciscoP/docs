@@ -143,8 +143,7 @@
       document.querySelector('.email').setAttribute('href', 'mailto:' + 'public@' + domain + '?' + 'subject=' + 'Create documentation for website');
     }, 1500);
 
-    console.log(u('form#contact').ajax);
-    u('form#contact').ajax(function(res){
+    u('#contact form').ajax(function(res){
       console.log(res);
     });
   </script>
