@@ -152,6 +152,10 @@ section.guide p {
   margin: 10px 0;
 }
 
+section.guide a {
+  color: #78bbf5;
+}
+
 section.guide img {
   width: 50%;
   max-width: 100px;
