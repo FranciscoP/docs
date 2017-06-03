@@ -149,11 +149,12 @@
       document.querySelector('.email').setAttribute('href', 'mailto:' + 'public@' + domain + '?' + 'subject=' + 'Create documentation for website');
     }, 1500);
 
-    u('#contact form').ajax(function(res){
+    u('#contact form').ajax(function(err, body){
+      if (err) {
+        return swal("Oops!", "Something went horribly wrong, please send me an email: public@" + "francisco.io", "success");
+      }
       swal("Email sent!", "Thank you for contacting us! We'll get in touch as soon as possible", "success");
       u('#contact form').nodes[0].reset();
-    }, function(){
-      swal("Oops!", "Something went horribly wrong, please send me an email: public@" + "francisco.io", "success");
     });
   </script>
 
