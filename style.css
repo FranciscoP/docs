@@ -156,6 +156,10 @@ section.guide a {
   color: #78bbf5;
 }
 
+section.guide a.button {
+  color: #fff;
+}
+
 section.guide img {
   width: 50%;
   max-width: 100px;
