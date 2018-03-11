@@ -156,15 +156,6 @@
       var domain = 'francisco.io';
       document.querySelector('.email').setAttribute('href', 'mailto:' + 'public@' + domain + '?' + 'subject=' + 'Create documentation for website');
     }, 1500);
-
-    u('#contact form').ajax(function(err, body){
-      if (err) {
-        console.log('You, I like you. This is the error:', err);
-        return swal("Oops!", "Something went horribly wrong, please send me an email: public@" + "francisco.io", "error");
-      }
-      swal("Email sent!", "Thank you for contacting us! We'll get in touch as soon as possible", "success");
-      u('#contact form').nodes[0].reset();
-    });
   </script>
 
   <script>
